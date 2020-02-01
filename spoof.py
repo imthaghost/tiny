@@ -49,10 +49,9 @@ def send_email(
 
 
 if __name__ == "__main__":
-    to = 'gary.frederick@students.makeschool.com'
-    from_email = 'tania@makeschool.com'
-    subject = 'Hello'
-    path = '/Users/ghost/Tools/tiny/makeschool.com.20180605.pem'
+    to = None
+    from_email = None
+    subject = None
+    path = './keys/makeschool.com.20180605.pem'
 
-    print(send_email(to, from_email, subject,
-                     "biotch", "hi", dkim_private_key_path=path))
+    print(send_email(to, from_email, subject, dkim_private_key_path=path))
